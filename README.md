@@ -1,4 +1,4 @@
-# contract project name here
+# Contract Event Model Derivation Results
 
 This project holds json contract (e.g. events, messaging, json storage, redis cache, etc.).  See the `ronin-contract-json-tooling` repository for more information.
 

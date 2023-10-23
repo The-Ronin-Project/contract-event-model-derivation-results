@@ -9,3 +9,5 @@ codecov/
 !gradle/wrapper/gradle-wrapper.jar
 .idea/
 .dependencies/
+
+*swp

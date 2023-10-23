@@ -1,0 +1,32 @@
+{
+  "indexedOn": {
+    "dataAuthority": {
+      "type": {
+        "coding": [
+          {
+            "code": "DAID",
+            "display": "Data Authority Identifier",
+            "system": "http://projectronin.com/id/dataAuthorityId"
+          }
+        ]
+      },
+      "system": "http://projectronin.com/id/dataAuthorityId",
+      "value": "EHR Data Authority"
+    },
+    "resourceId": "foo1",
+    "resourceType": "Patient",
+    "tenantId": "bar"
+  },
+  "artifact": {
+    "name": "test artifact",
+    "version": "1"
+  },
+  "resources": [
+    {
+      "id": "1",
+      "subject": {
+        "reference": "Patient/foo1"
+      }
+    }
+  ]
+}
