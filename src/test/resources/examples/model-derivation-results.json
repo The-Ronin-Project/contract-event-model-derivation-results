@@ -13,8 +13,10 @@
       "system": "http://projectronin.com/id/dataAuthorityId",
       "value": "EHR Data Authority"
     },
-    "resourceId": "foo1",
-    "resourceType": "Patient",
+    "resource": {
+      "type": "Patient",
+      "id": "foo1"
+    },
     "tenantId": "bar"
   },
   "artifact": {

@@ -14,20 +14,26 @@
           "description": "Codeable concept to represent the authority of the resource",
           "$ref": "#/$defs/codeableConcept"
         },
-        "resourceId": {
-          "description": "The FHIR ID associated to this resource",
-          "type": "string"
-        },
-        "resourceType": {
-          "description": "The type of FHIR Resource",
-          "type": "string"
+        "resource": {
+          "type": "object",
+          "description": "The FHIR type and ID associated to this resource",
+          "additionalProperties":false,
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            }
+          },
+          "required":["type", "id"]
         },
         "tenantId": {
           "description": "The ID of the tenant to retrieve the resource",
           "type": "string"
         }
       },
-      "required":["dataAuthority", "resourceId", "resourceType", "tenantId"]
+      "required":["dataAuthority", "resource", "tenantId"]
     },
     "artifact": {
       "type": "object",
